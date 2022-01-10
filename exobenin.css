@@ -54,7 +54,27 @@ header {
 
 }
 
-@media screen and (max-width:776px) {
+@media screen and (max-width:320px) {
+    .bloc1 {
+        height: 300px !important;
+    }
+
+    .conteneur {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .bloc1 {
+        height: 300px !important;
+    }
+
+    .conteneur {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:767px) {
     .bloc1 {
         height: 300px !important;
     }
