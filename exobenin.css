@@ -36,6 +36,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid black;
+    background-attachment: fixed;
     height: 600px;
 
 
@@ -53,6 +54,12 @@ header {
     font-size: 25px;
     opacity: 0.6;
 
+}
+
+@media screen and (max-width:767px) {
+    .block1 {
+        height: 250px;
+    }
 }
 
 .textemilieu {
