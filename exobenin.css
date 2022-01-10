@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #003366;
+    border: 1px solid #003366;
+    height: 91px;
+    width: 100%;
+}
+
+.image1 {
+    float: left;
+}
+
+.image2 {
+    float: right;
+}
+
+.resultat {
+    color: white;
+    font-family: arial black;
+    font-size: 35px;
+}
+
+.portail {
+    color: white;
+    font-family: arial black;
+    font-size: 9px;
+}
+
+.conteneur {
+    background-image: url("Ecoliers-africains.jpg");
+    /* object-fit: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    height: 600px;
+
+
+}
+
+
+.bloc1 {
+    background-color: #003366;
+    border: 1px solid #003366;
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    font-size: 25px;
+    opacity: 0.6;
+
+}
+
+.textemilieu {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.textemilieu {
+    font-size: 25px;
+    font-family: arial black;
+}
+
+.textemilieu p {
+    font-size: 30px;
+    font-family: times new roman;
+}
+
+#contaner {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+#formulaire {
+    width: 100%;
+    height: 350px;
+    border: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+
+}
+
+#formulaire p {
+    font-size: 20px;
+    font-family: times new roman;
+}
+
+#formulaire label {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: arial black;
+}
+
+#submit {
+    background-color: orange;
+    font-family: arial black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+
+}
+
+footer {
+    border: 1px solid #303030;
+    background-color: #303030;
+    text-align: left;
+    height: 150px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.basfooter {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+}
+
+.contact {
+    font-family: times new roman;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#resultat {
+    border: 1px solid black;
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    display: none;
+    box-sizing: border-box;
+    /* background-color: teal; */
+}
+
+#resultat label {
+    font-size: 20px;
+    font-family: times new roman;
+    font-weight: bold;
+
+}
+
+#resultat input {
+    border: 1px solid blue;
+    height: 35px;
+    width: 80%;
+    position: relative;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#resultat input[type="submit"] {
+    border: 1px solid blue;
+    height: 35px;
+    width: 50%;
+    position: relative;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+#resultat select {
+    /* margin-top: 0.5rem; */
+    border: 1px solid blue;
+    height: 35px;
+    width: 80%;
+    position: relative;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.departement h3 {
+    margin-top: 0.5rem;
+}
+
+#temps {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    border: 0.5px solid white;
+}

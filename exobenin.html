@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>eresultat.bj</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet"  href="exobenin.css">
+        </head>
+        
+    <body>
+        <header>
+            <p> <img src="beninlogo.png" class="image1" alt="benin"> <img  src="benindrapeau.png" class="image2" alt="benin"><span class="resultat" > <span style="border-bottom:2px solid green">eRE</span><span style="border-bottom:2px solid yellow">SULT</span><span style="border-bottom:2px solid red">ATS</span></h1></span><br><span class="portail">LE PORTAIL DES EXAMENS ET CONCOURS DU BENIN</span></p>
+        </header>
+        <p id="temps"></p>
+        <div class="conteneur">
+        <div class="bloc1">
+            <h1><marquee scrollamount=15 >BIENVENU SUR LA PLATEFORME <span style="color:green">eRE</span><span  style="color:yellow">SULT</span><span style="color:red">ATS</span></marquee></h1><br>
+            <p>Vos résultat aux différents examens(CEP,BEPC,BAC) et concours nationaux disponibles en ligne et dans vos boites mail</p><br>
+            <h2>eRésultat vous souhaite une belle réussite! </h2>     
+        </div>
+        </div>
+        <div class="textemilieu">
+        <h3>RECHERCHER GRATUITEMENT VOTRE RESULTAT AU CEP,BEPC OU BAC 2020</h3><br>
+        <p>Attention : Il est formellement interdit à toute personne de procéder à une diffusion des informations liées aux<br> candidats sans autorisation des structures organisatrices des examens et concours nationaux.</p><br><br>
+        </div>
+        
+        <p class="contact"><span style="font-family:arial black ;text-decoration:underline">NOUS CONTACTER:</span><span style="font-size:25px">Si vous avez besoin d'assistance prière nous contacter en écrivant à cette adresse email : contact@eresultats.bj <br>ou en appelant le numéro 91380000. Nous mettons tout en œuvre pour vous répondre le plus rapidement possible.</span></p><br>
+        
+        
+        <marquee scrollamount=15  width="80%" direction=left behavior=alternate><h1 id='para'></h1></marquee>
+         
+         
+    <div id="contaner" >
+    
+        <div id="formulaire">
+                <p><strong>Examen</strong><br><br>Pour quel examen souhaitez-vous voir le résultat?</p><br>
+               <div> <input type="radio"  name="exam"  id="cep"  value="cep" ><label for="cep">CEP</label></div><br>
+                <div> <input type="radio"  name="exam"  id="bepc" value="bepc" ><label for="bepc">BEPC</label></div><br>
+                <div> <input type="radio"  name="exam"  id="bac" value="bac" ><label for="bac">BAC</label><br></div><br>
+                
+        </div>       
+       
+        
+        <div id="resultat">
+            <form method="POST"  action="">
+            <div id="form1" >        
+                <h3>Pour consulter votre résultat veuillez remplir les champs ci-dessous</h3><br>
+                <label for="cep">Numéro de table</label><br><br>
+                <input type="text"  name="exam1"  id="cep"  value="XX0000"  required="required"  size="20">
+            </div>
+            <div id="form2" >
+           
+                <label for="cep">Centre de Composition</label><br><br>
+                <input type="text"  name="centre"  id="centre" required="required"  size="20">
+            </div>
+            <div  class="departement">
+            <h3>Le Département</h3>
+             <select id="departement" required="required">
+                <option>Alibori</option>
+                <option>Atacora</option>
+                <option>Borgou</option>
+                <option>Colline</option>
+                <option>Donga</option>
+                 <option>Littoral</option>
+                <option>Atlantique</option>
+                <option>Zou</option>
+                <option>Mono</option>
+                 <option>Ouémé</option>
+                <option>Plateau</option>
+                <option>Couffo</option>
+             </select><br><br>   
+            <input type="submit" id="submit" value="CONSULTER"><br>
+            </div>
+            </form>
+        </div>
+    </div>
+           
+        <footer>
+            
+            <p class="basfooter">© 2020 Portail des examens et concours du BENIN - eresultats.bj.</p>
+            
+        </footer>
+        
+        <script>
+            var examen1=document.getElementById('cep');
+            var result=document.getElementById('resultat');
+            examen1.addEventListener('click', resultat1);
+            var conteneur=document.getElementById('contaner');
+            var formulaire=document.getElementById('formulaire');
+            var examen2=document.getElementById('bepc');
+            examen2.addEventListener('click', resultat2);
+            var examen3=document.getElementById('bac');
+            examen3.addEventListener('click', resultat3);
+            var form1=document.getElementById('form1');
+            var consulte=document.getElementById('submit');
+            consulte.addEventListener('click', info);
+            p1=document.getElementById('para');
+
+            
+            function info(){
+                p1.innerHTML='WAOOOH!!! Félicitation si tu es admis.<br>Dans le cas contraire du Courage';
+                p1.style.color='orange';
+                p1.style.fontStyle='italic';
+                p1.style.textAlign='center';
+                p1.fontSize='20px';
+            }
+            
+            
+            function resultat1(){
+                if(examen1)
+                {
+                    examen1.style.dispaly=result.style.display='block';
+                    conteneur.style.width='100%';
+                    formulaire.style.width='50%';
+                    // formulaire.style.backgroundColor='green';
+                    // form2.style.backgroundColor='red';
+                    conteneur.style.borderRadius='5px';
+                    conteneur.style.border='3px solid white';
+                    // form1.style.backgroundColor='yellow'; //'#F0C300';
+                    result.style.backgroundColor='teal';
+            result.style.color='black';
+                }
+               
+            }
+            
+            function resultat2(){
+                if(examen2)
+                {
+                    examen2.style.dispaly=result.style.display='block';
+                    conteneur.style.width='100%';
+                    formulaire.style.width='50%';
+                //    form1.style.backgroundColor='orange'; 
+                //    form2.style.backgroundColor='orange';
+            result.style.backgroundColor='darkblue';
+            result.style.color='white';
+                    
+                    
+                }
+                
+                
+
+            }
+            
+            
+            function resultat3(){
+                if(examen3)
+                {
+                    examen3.style.dispaly=result.style.display='block';
+                    conteneur.style.width='100%';
+                    formulaire.style.width='50%';
+                    // form1.style.backgroundColor='#FF69B4'; 
+                    // form2.style.backgroundColor='#FF69B4';
+              result.style.backgroundColor='maroon';
+              result.style.color='white';
+                    
+                    
+                }
+                
+                
+             
+            }
+
+            var paragraphe1=document.getElementById('temps');
+            var heure=setInterval(horloge,1000);
+            
+            function horloge(){
+                
+                var d=new Date();
+                paragraphe1.innerHTML='HEURE :' + '\t' + d.toLocaleTimeString();
+                
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+        </script>
+        
+        
+        
+       
+        
+        
+        
+        
+    </body>
+        
+        
+        
+        
+        
+        
+    </html>
