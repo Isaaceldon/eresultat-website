@@ -57,7 +57,7 @@ header {
 }
 
 @media screen and (max-width:767px) {
-    .block1 {
+    .bloc1 {
         height: 250px;
     }
 }
