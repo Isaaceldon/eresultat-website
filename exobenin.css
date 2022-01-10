@@ -31,7 +31,7 @@ header {
 }
 
 .conteneur {
-    background-image: url("Ecoliers-africains.jpg");
+    background-image: url("/images/Ecoliers-africains.jpg");
     /* object-fit: contain; */
     background-size: cover;
     background-repeat: no-repeat;
