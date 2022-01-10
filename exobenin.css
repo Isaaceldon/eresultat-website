@@ -36,7 +36,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid black;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 600px;
 
 
@@ -56,9 +56,14 @@ header {
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:776px) {
     .bloc1 {
-        height: 250px;
+        height: 300px !important;
+        border: 1px solid red;
+    }
+
+    .conteneur {
+        background-size: cover;
     }
 }
 
